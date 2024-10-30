@@ -1,0 +1,58 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  background-color: pink;
+  margin: 0; /* Remove default margin */
+  flex-direction: column; /* Stack clock and date vertically */
+}
+
+#clock {
+  width: 280px;
+  height: 150px;
+  background: rgb(17, 4, 134);
+  border-radius: 15px;
+  box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(209, 12, 231, 0.841), rgb(248, 161, 223));
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#clock:hover {
+    box-shadow: rgb(0,0,0) 5px 10px 50px ,rgb(0,0,0) -5px 0px 250px;
+}
+
+#date {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+#date:hover {
+    background-color: lightgoldenrodyellow; /* Change background on hover */
+}
+.moon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover > .moon {
+    font-size: 23px;
+  }
+  
+
